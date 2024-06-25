@@ -1,8 +1,12 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Londrina_Solid, Ubuntu_Mono } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const ubuntu = Ubuntu_Mono({ subsets: ["latin"], weight: ["400", "700"] });
+const londrina = Londrina_Solid({
+  subsets: ["latin"],
+  weight: ["100", "300", "400", "900"],
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="sv">
-      <body className={inter.className}>{children}</body>
+      <body className={londrina.className}>{children}</body>
     </html>
   );
 }
