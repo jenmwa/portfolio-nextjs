@@ -9,6 +9,8 @@ const config: Config = {
   ],
   theme: {
     colors: {
+      black: '000000',
+      white: '#fff',
       blue: '#577590',
       teal: '#43AA8B',
       green: '#90BE6D',
@@ -18,6 +20,13 @@ const config: Config = {
       red: '#F94144',
       gray: {
         100: '#f7fafc',
+      },
+      screens: {
+        'sm': '640px',
+        'md': '768px',
+        'lg': '1024px',
+        'xl': '1280px',
+        '2xl': '1536px',
       }
     },
     extend: {

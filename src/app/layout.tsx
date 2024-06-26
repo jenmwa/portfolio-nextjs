@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Londrina_Solid, Ubuntu_Mono } from "next/font/google";
 import "./globals.css";
+import { Header } from "./_components/Header";
+import Background from "./_components/Background";
+import { PresentationBlock } from "./_components/PresentationBlock";
 
 const ubuntu = Ubuntu_Mono({ subsets: ["latin"], weight: ["400", "700"] });
 const londrina = Londrina_Solid({
@@ -20,7 +23,20 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="sv">
-      <body className={londrina.className}>{children}</body>
+      <body className={londrina.className}>
+        <Background></Background>
+        <main className="">
+          <div className="">
+            <div className="relative">
+              <Header></Header>
+              {children}
+              <PresentationBlock></PresentationBlock>
+            </div>
+          </div>
+        </main>
+
+        {/* <footer className="border bg-black color-white  h-24"></footer> */}
+      </body>
     </html>
   );
 }

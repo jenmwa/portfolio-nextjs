@@ -14,6 +14,7 @@ export default function Background() {
         objectFit: "cover",
         objectPosition: "top left",
       }}
+      className="bg-fixed"
     />
   );
 }

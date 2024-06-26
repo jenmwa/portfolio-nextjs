@@ -9,32 +9,32 @@ export const Navigation = () => {
         <LiNavElement
           bgColor={"bg-blue"}
           value={"HEM"}
-          hoverBgColor={"hover:bg-green-500"}
+          hoverBgColor={"hover:bg-green"}
         ></LiNavElement>
         <LiNavElement
           bgColor={"bg-teal"}
           value={"OM"}
-          hoverBgColor={"hover:bg-yellow-500"}
+          hoverBgColor={"hover:bg-yellow"}
         ></LiNavElement>
         <LiNavElement
           bgColor={"bg-green"}
           value={"PROJEKT"}
-          hoverBgColor={"hover:bg-yellow-500"}
+          hoverBgColor={"hover:bg-yellow"}
         ></LiNavElement>
         <LiNavElement
           bgColor={"bg-yellow"}
           value={"KONTAKT"}
-          hoverBgColor={"hover:bg-yellow-500"}
+          hoverBgColor={"hover:bg-yellow"}
         ></LiNavElement>
         <LiNavElement
           bgColor={"bg-orange"}
           value={"GITHUB"}
-          hoverBgColor={"hover:bg-yellow-500"}
+          hoverBgColor={"hover:bg-yellow"}
         ></LiNavElement>
         <LiNavElement
           bgColor={"bg-redOrange"}
           value={"LINKEDIN"}
-          hoverBgColor={"hover:bg-yellow-500"}
+          hoverBgColor={"hover:bg-yellow"}
         ></LiNavElement>
         <div className="flex flex-col justify-center">
           <li className="p-4 cursor-pointer ">LIGHT DARK</li>
