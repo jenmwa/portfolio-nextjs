@@ -1,4 +1,6 @@
 import { LiNavElement } from "./LiNavElement";
+import Image from "next/image";
+import dark from "/public/imgs/svg_moon.svg";
 
 export const Navigation = () => {
   return (
@@ -34,11 +36,13 @@ export const Navigation = () => {
           value={"LINKEDIN"}
           hoverBgColor={"hover:bg-yellow-500"}
         ></LiNavElement>
-        <LiNavElement
-          bgColor={"bg-transparent"}
-          value={"LIGHT DARK"}
-          hoverBgColor={"hover:bg-yellow-500"}
-        ></LiNavElement>
+        <div className="flex flex-col justify-center">
+          <li className="p-4 cursor-pointer ">LIGHT DARK</li>
+
+          <button className="border w-10 ml-auto mr-auto ">
+            <Image src={dark} width={40} alt={"dark mode"}></Image>
+          </button>
+        </div>
       </ul>
     </>
   );

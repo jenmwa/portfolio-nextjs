@@ -1,5 +1,5 @@
 import Image from "next/image";
-import backgroundDots from "/public/imgs/bg.jpg";
+import backgroundDots from "/public/imgs/background.jpg";
 
 export default function Background() {
   return (
@@ -12,6 +12,7 @@ export default function Background() {
       sizes="100vw"
       style={{
         objectFit: "cover",
+        objectPosition: "top left",
       }}
     />
   );
