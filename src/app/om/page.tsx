@@ -1,9 +1,15 @@
+import { MainContainer } from "../_components/MainContainer";
+
 export default function Om() {
   return (
     <>
-      <div className="p-4 mb-auto bg-white bg-opacity-75 rounded max-w-screen-md">
-        <h1 className="text-9xl">OM!</h1>
-        <div className="font-paragraph">img container</div>
+      <div className="flex flex-col gap-8 sm:flex-row">
+        <MainContainer
+          heading={"OM"}
+          text={"Text om jenny och portfolioooooooooooooo"}
+        ></MainContainer>
+        <MainContainer heading={"test"} text={"texttext"}></MainContainer>
+        <MainContainer heading={"test"} text={"texttext"}></MainContainer>
       </div>
     </>
   );

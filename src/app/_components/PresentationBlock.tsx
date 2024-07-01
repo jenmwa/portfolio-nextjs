@@ -6,7 +6,7 @@ export const PresentationBlock = () => {
     <>
       {/* <div className="border-4 bg-white text-green rounded p-4 max-w-[36rem] mt-auto mb-8"> */}
 
-      <div className="m-2 my-8 md:ml-8 border-4 bg-white text-green rounded p-4 max-w-[36rem]  bottom-8">
+      <div className="mb-8 m-2 md:ml-8 border-4 bg-white text-green rounded p-4 max-w-[36rem]">
         <div className=" relative">
           <h3 className="mr-8 text-4xl text-blue mb-4">FRONTEND DEVELOPER</h3>
           <div className="absolute left-80 bottom-1">

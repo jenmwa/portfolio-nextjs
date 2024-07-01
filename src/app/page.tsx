@@ -1,29 +1,18 @@
-import Background from "./_components/Background";
-import { Header } from "./_components/Header";
 import { MainContainer } from "./_components/MainContainer";
 import { PresentationBlock } from "./_components/PresentationBlock";
 
 export default function Home() {
   return (
     <>
-      {/* <Background></Background>
-      <main className="h-screen">
-        <div className="">
-          <div className="relative">
-            <Header></Header> */}
-
-      <div className="flex justify-center md:justify-end xl:justify-center">
-        {/* <ProfilePicture></ProfilePicture> */}
-        {/* <div className="mt-16 p-2 md:p-8 h-full flex flex-col content-between gap-12 md:gap-36"> */}
-
-        <div className="mt-16 p-2 md:p-8 h-full">
-          <MainContainer></MainContainer>
-          {/* <PresentationBlock></PresentationBlock> */}
-        </div>
+      <div>
+        <MainContainer
+          heading={"HEJ!"}
+          text={
+            " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim adminim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt inculpa qui officia deserunt mollit anim id est laborum."
+          }
+        ></MainContainer>
+        <br></br> <br></br>
       </div>
-      {/* </div>
-        </div>
-      </main> */}
     </>
   );
 }

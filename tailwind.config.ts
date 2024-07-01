@@ -34,6 +34,9 @@ const config: Config = {
         heading: ['Londrina Solid', 'sans-serif'],
         paragraph: ['Ubuntu Mono', 'monospace'],
       },
+      backgroundImage: {
+        "hero-image": "url('/imgs/background_.jpg')"
+      },
     },
   },
   plugins: [],
