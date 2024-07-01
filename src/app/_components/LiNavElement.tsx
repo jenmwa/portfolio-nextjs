@@ -6,10 +6,12 @@ interface ILiNavElementProps {
   bgColor: string;
   value: string;
   hoverBgColor: string;
+  svg?: JSX.Element;
 }
 
 export const LiNavElement = ({
   value,
+  svg,
   bgColor,
   hoverBgColor,
 }: ILiNavElementProps) => {
@@ -24,10 +26,14 @@ export const LiNavElement = ({
   return (
     <>
       <li
-        className={`p-4  ${bgColor} cursor-pointer ${hoverBgColor} }`}
+        className={` p-4 writing-mode-vertical-rl text-orientation-upright ${bgColor} cursor-pointer ${hoverBgColor} }`}
         onClick={() => handleMenuOnClick(value)}
       >
-        {value}
+        <span className="flex justify-between">
+          {" "}
+          {value}
+          {svg}{" "}
+        </span>
       </li>
     </>
   );

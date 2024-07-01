@@ -9,7 +9,7 @@ const config: Config = {
   ],
   theme: {
     colors: {
-      black: '000000',
+      black: '#000000',
       white: '#fff',
       blue: '#577590',
       teal: '#43AA8B',
@@ -39,6 +39,17 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [function ({ addUtilities }: any) {
+    const newUtilities = {
+      '.writing-mode-vertical-rl': {
+        'writing-mode': 'vertical-rl',
+      },
+      '.text-orientation-upright': {
+        'text-orientation': 'upright',
+      },
+    };
+
+    addUtilities(newUtilities);
+  },],
 };
 export default config;

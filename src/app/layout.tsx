@@ -24,12 +24,11 @@ export default function RootLayout({
   return (
     <html lang="sv">
       <body className={`h-full ${londrina.className}`}>
-        <main className="min-h-screen bg-hero-image bg-no-repeat bg-cover bg-fixed flex flex-col">
-          <div className="">
-            <Header></Header>
-          </div>
-          <div className="flex flex-col justify-between flex-grow">
-            <div className="flex justify-center md:justify-end xl:justify-center mt-16 p-2 md:p-8">
+        <main className="h-screen bg-hero-image bg-no-repeat bg-cover bg-fixed flex flex-col">
+          <Header></Header>
+
+          <div className="flex flex-col justify-between flex-grow my-0 overflow-hidden">
+            <div className="flex justify-center md:justify-end xl:justify-end p-2 md:p-8 flex-grow overflow-hidden">
               {children}
             </div>
             <PresentationBlock></PresentationBlock>
