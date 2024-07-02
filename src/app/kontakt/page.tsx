@@ -3,7 +3,7 @@ import { MainContainer } from "../_components/MainContainer";
 export default function Kontakt() {
   return (
     <>
-      <div className="flex gap-4">
+      <div className="flex flex-col gap-8 sm:flex-row">
         <MainContainer
           heading={"KONTAKT"}
           text={"Text om jenny och kontaktuuuuuuuuppgifter!"}

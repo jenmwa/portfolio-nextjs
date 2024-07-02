@@ -23,8 +23,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="sv">
-      <body className={`h-full ${londrina.className}`}>
-        <main className="h-screen bg-hero-image bg-no-repeat bg-cover bg-fixed flex flex-col">
+      <body className={`w-full md:h-full ${londrina.className}`}>
+        <main className="sm:h-screen bg-hero-image bg-no-repeat bg-cover bg-fixed flex flex-col ">
           <Header></Header>
 
           <div className="flex flex-col justify-between flex-grow my-0 overflow-hidden">
