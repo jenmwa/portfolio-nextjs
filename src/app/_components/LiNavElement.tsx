@@ -31,10 +31,10 @@ export const LiNavElement = ({
       window.open("https://github.com/jenmwa", "_blank");
       return;
     } else if (
-      value.toUpperCase() === "DARKMODE" ||
-      value.toUpperCase() === "LIGHTMODE"
+      value.toUpperCase() === "DARK" ||
+      value.toUpperCase() === "LIGHT"
     ) {
-      toggleTheme?.();
+      toggleTheme && toggleTheme?.();
       return;
     } else {
       const route = value.toUpperCase() === "HEM" ? "/" : value.toLowerCase();
@@ -45,13 +45,14 @@ export const LiNavElement = ({
   return (
     <>
       <li
+        tabIndex={0}
         className={`${textColor} p-4 writing-mode-vertical-rl text-orientation-upright ${bgColor} cursor-pointer ${hoverBgColor} }`}
         onClick={() => handleMenuOnClick(value)}
       >
-        <span className={`flex justify-between `}>
+        <span className={`flex justify-between dark:color-white `}>
           {" "}
           {value}
-          {svg}{" "}
+          {/* {svg}{" "} */}
         </span>
       </li>
     </>

@@ -1,5 +1,4 @@
 import { MainContainer } from "./_components/MainContainer";
-import { PresentationBlock } from "./_components/PresentationBlock";
 
 export default function Home() {
   return (
@@ -8,7 +7,7 @@ export default function Home() {
         <MainContainer
           heading={"HEJ!"}
           text={
-            " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim adminim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt inculpa qui officia deserunt mollit anim id est laborum."
+            " Kul att just DU hittat hit!<br></br> Jenny heter jag och detta är mitt alldeles egna digitala krypin i form av min portfolio. <br></br>Nyexad frontend-utbvecklare med mediabakgrund och stort intresse för design och där jag nu i rollen som frontendare kan knyta samman allt.  MNooooooot nya äventyr! . <br></br> kram Jenny"
           }
         ></MainContainer>
         <br></br> <br></br>

@@ -1,9 +1,3 @@
-import Image from "next/image";
-import computer from "/public/imgs/svg_computer.svg";
-import hello from "/public/imgs/hand-shake-svgrepo-com.svg";
-import spaceship from "/public/imgs/rocket-ship-svgrepo-com.svg";
-import { SVGAttributes } from "react";
-
 interface IMainContainerProps {
   heading: string;
   text: string;
@@ -40,7 +34,7 @@ export const MainContainer = ({ heading, text }: IMainContainerProps) => {
           </svg>
 
           <svg
-            className="hidden 2xl:block w-[296px] xl:w-[368px] -ml-72 mt-48 -rotate-45 absolute z-10"
+            className="hidden 2xl:block w-[144px] xl:w-[144px] -ml-36 mt-56 -rotate-45 absolute z-10"
             viewBox="0 0 24 24"
             fill="none"
             stroke="#90BE6D"
@@ -54,17 +48,13 @@ export const MainContainer = ({ heading, text }: IMainContainerProps) => {
             />
           </svg>
         </div>
-        <div className="relative p-4 bg-white bg-opacity-75 border-4 rounded md:max-w-screen-md xl:max-w-screen-lg overflow-y-auto max-h-full">
+        <div className="relative p-4 bg-white bg-opacity-75 border-4 rounded md:max-w-screen-md xl:max-w-screen-lg overflow-y-auto md:h-[400px]">
           <h1 className="text-8xl">{heading}</h1>
-          <p className="font-paragraph">
-            {text}
-            <br></br>
-            <br></br> <br></br>
-            <br></br> <br></br>
-            <br></br> <br></br>
-            <br></br> <br></br>
-            <br></br>
-          </p>
+
+          <div
+            className="font-paragraph"
+            dangerouslySetInnerHTML={{ __html: text }}
+          />
         </div>
       </section>
     </>

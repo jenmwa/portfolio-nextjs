@@ -20,8 +20,6 @@ export const Container = ({ heading, text }: IMainContainerProps) => {
             <br></br>
             <br></br> <br></br>
             <br></br> <br></br>
-            <br></br> <br></br>
-            <br></br> <br></br>
             <br></br>
           </p>
         </div>
