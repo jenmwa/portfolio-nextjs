@@ -52,7 +52,7 @@ export const LiNavElement = ({
         <span className={`flex justify-between dark:color-white `}>
           {" "}
           {value}
-          {/* {svg}{" "} */}
+          {svg}{" "}
         </span>
       </li>
     </>

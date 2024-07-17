@@ -11,9 +11,9 @@ export const PresentationBlock = () => {
           <h3 className="mr-8 text-4xl text-blue mb-4">FRONTEND DEVELOPER</h3>
           <div className="absolute left-80 bottom-1">
             <svg
-              width="135"
-              height="115"
-              fill={"white"}
+              className="w-[40px] md:w-[136px]"
+              height="auto"
+              fill="white"
               viewBox="0 0 135 115"
               xmlns="http://www.w3.org/2000/svg"
             >
